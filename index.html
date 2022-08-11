@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Encriptador de Mensajes/Angel Jacinto</title>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+		<script type="text/javascript" src="funciones.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="line"></div>
+			<div class="row">
+				<img src="images/vector.png" id="image">
+				<h1 class="textFijo">Encriptador de Mensajes</h1>
+			</div>
+		</header>
+		<div class="container">
+			<div class="block-2 block-s-3" >
+				<div class="col-7 col-s-12">
+					<div class="columnLeft">
+						<div class="text"><textarea type="text" placeholder="Ingrese su texto aquí... "  id="texto" ></textarea></div>
+						<div class="row"><img src="images/signo.png" id="signo"><p id="aviso">Solo letras minúsculas y sin acentos.</p></div>
+						<div class="block-5 block-s-5">
+							<div class="col-5 col-s-12"><button id="btn" onclick="encryptText()">Encriptar</button></div>
+							<div class="col-1 col-s-12"><div id="a"><p style="color: #FEFBF6;">.</p></div></div>
+							<div class="col-5 col-s-12"><button class="btns" onclick="decryptText()">Desincriptar</button></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-5 col-s-12">
+					<div class="columnRigth">
+						<div class="col-12 col-s-12"  id="part1"><img src="images/man.png" class="imgM"></div>
+						<div class="col-12 col-s-12" id="part2"><h3 class="mensaje">Ningún mensaje fue encontrado</h3><p class="mensaje1">Ingresa el texto que deseas encriptar o desincriptar</p></div>
+						<div class="text" id="part3" style="display: none;"><textarea id="vista" readonly></textarea></div>
+						<div class="block-1 block-s-5" id="part4" style="display: none;"><div class="space"><button class="btns" onclick="copyText()">Copiar Texto</button></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="main-footer">
+			<div class="block-3 block-5">
+					<div class="rowDown"><a href="mailto:jacintoangelpayes@yahoo.com"> Angel Jacinto Roberto Jacinto Payes </a></div>
+					<div class="row">
+						<div class="col-4 col-s-0"><p>.</p></div>
+						<div class="col-1 col-s-3"><img src="images/github.png" class="contactoImg" href=""></div>
+						<div class="col-0 col-s-0"><p>.</p></div>
+						<div class="col-1 col-s-3"><img src="images/discord.png" class="contactoImg" href="http://discordapp.com/users/4464"></div>
+						<div class="col-0 col-s-0"><p>.</p></div>
+						<div class="col-1 col-s-3"><img src="images/linkedin.png" class="contactoImg" href="www.linkedin.com/in/angel-roberto-jacinto-payes"></div>
+						<div class="col-4 col-s-0"><p>.</p></div>
+					</div>
+			</div>
+		</footer>
+	</body>
+</html>
