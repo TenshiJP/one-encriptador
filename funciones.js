@@ -1,4 +1,4 @@
-
+//Función para encriptar el texto.
 function encryptText(){
     let inputText = document.querySelector("#texto");//Seleccionar el input.
     let texto = inputText.value;                    //Capturar texto del input.
@@ -24,6 +24,7 @@ function encryptText(){
     }
 }
 
+//Función para desinncriptar el texto.
 function decryptText(){
     let inputText = document.querySelector("#texto");       //Seleccionar el input.
     let texto = inputText.value;                            //Capturar texto del input.    
@@ -38,12 +39,14 @@ function decryptText(){
     }
 }
 
+//Función para mostrar el resultado de encriptar o desincriptar un texto.
 function showText(texto){
     let inputText = document.querySelector("#vista");
     inputText.value = texto;                           //Mostrar texto en la web.
     inputText.focus();
 }
 
+//Función para copiar el texto del resultado de encriptar o desincriptar un texto.
 function copyText(){
     let inputText = document.querySelector("#vista");
     let inputVista = document.querySelector("#texto");
@@ -52,6 +55,7 @@ function copyText(){
     inputVista.select();
 }
 
+//Función para verficar si se esta ingresando un texto para encriptar o desisncriptar.
 function showResult(texto){
     let a = document.getElementById("part1");
     let b = document.getElementById("part2");
